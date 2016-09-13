@@ -43,7 +43,7 @@ app.post('/message', (req, res) => {
 
 
 app.get('/train', (req, res) => {
-    nlp.train('./data/sentences_small_no_stops.train');
+    nlp.train('./data/training_small.txt');
     res.send('training complete.');
 });
 
